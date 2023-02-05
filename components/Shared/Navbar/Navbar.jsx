@@ -7,23 +7,42 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link href={'/'}>Home</Link>
+        <Link href={'/'} className="focus:bg-teal-500">
+          Home
+        </Link>
       </li>
       <li>
-        <Link href={'/about_me'}>About</Link>
+        <Link href={'/about'} className="focus:bg-teal-500">
+          About
+        </Link>
       </li>
       <li>
-        <Link href={'/blogs'}>Blogs</Link>
+        <Link href={'/projects'} className="focus:bg-teal-500">
+          Projects
+        </Link>
       </li>
+      <li>
+        <Link href={'/blogs'} className="focus:bg-teal-500">
+          Blogs
+        </Link>
+      </li>
+      <li>
+        <Link href={'/sign-in'} className="focus:bg-teal-500">
+          Sign In
+        </Link>
+      </li>
+      {/* <li>
+        <Link href={'/blogs'} className="focus:bg-teal-500">Blogs</Link>
+      </li> */}
     </>
   );
   return (
     <div className="navbar">
       <div className="navbar-start">
-        <button className="btn btn-ghost normal-case text-xs sm:text-sm md:text-xl text-primary">
+        <button className="btn btn-ghost normal-case text-xs sm:text-sm md:text-xl">
           <Link href={'/'} className="">
             {/* <FontAwesomeIcon icon={faCode} className="mr-2" size="lg" />{' '} */}
-            <span className="text-white">Muhammad Azizul Hoque Jiku</span>
+            <span className="text-teal-500">Muhammad Azizul Hoque Jiku</span>
           </Link>
         </button>
       </div>

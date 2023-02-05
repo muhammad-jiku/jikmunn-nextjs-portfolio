@@ -60,8 +60,8 @@ const Footer = () => {
           <p>
             Copyright &copy; {year} - All right reserved by{' '}
             <span
-              className="text-xs sm:text-sm md:text-xl text-primary"
-              style={{ fontFamily: 'Comfortaa' }}
+              className="text-xs text-teal-500 font-extrabold sm:text-sm md:text-xl"
+              // style={{ fontFamily: 'Comfortaa' }}
             >
               {' '}
               Muhammad Azizul Hoque Jiku{' '}
