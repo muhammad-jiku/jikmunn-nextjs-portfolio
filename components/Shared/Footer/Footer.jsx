@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="mt-auto pt-6">
       {/* <BackToTop /> */}
-      <div className="footer footer-center p-4 text-base-content glass">
+      <div className="footer footer-center p-4 glass">
         <div>
           {/* <div>
              <a

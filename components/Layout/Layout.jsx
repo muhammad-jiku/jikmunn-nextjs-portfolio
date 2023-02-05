@@ -7,7 +7,7 @@ import Navbar from '../Shared/Navbar/Navbar';
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden">
+    <div className="flex flex-col min-h-screen overflow-x-hidden bg-black text-white">
       <Navbar />
       <Suspense
         fallback={
