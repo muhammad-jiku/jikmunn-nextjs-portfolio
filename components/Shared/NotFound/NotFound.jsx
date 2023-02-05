@@ -6,7 +6,7 @@ import NotFoundImg from '../../../assets/gifs/notfound1.gif';
 
 const NotFound = () => {
   return (
-    <div className="hero min-h-full">
+    <div className="hero min-h-screen">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <img src={NotFoundImg.src} alt="not found" />

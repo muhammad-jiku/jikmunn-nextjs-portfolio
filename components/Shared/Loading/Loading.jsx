@@ -1,11 +1,18 @@
-import React from 'react';
+'use client';
 
-const Loading = () => {
+import React from 'react';
+import loadingImg from '../../../assets/gifs/loading.gif';
+
+const LoadingSpinner = () => {
   return (
-    <div>
-      <h1>Loading....</h1>
+    <div className="hero min-h-screen">
+      <div className="hero-content text-center">
+        <div className="max-w-md">
+          <img src={loadingImg.src} alt="loading" />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Loading;
+export default LoadingSpinner;
