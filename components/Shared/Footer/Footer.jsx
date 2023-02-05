@@ -1,11 +1,19 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fromBottomVariants } from '@/utils/motion';
+import styles from '@/styles';
 
 const Footer = () => {
   const year = new Date()?.getFullYear();
   return (
-    <div className="mt-auto pt-6">
+    <motion.div
+      variants={fromBottomVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${styles.xPaddings} pt-6 mt-auto relative`}
+    >
       {/* <BackToTop /> */}
       <div className="footer footer-center p-4 glass">
         <div>
@@ -69,7 +77,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

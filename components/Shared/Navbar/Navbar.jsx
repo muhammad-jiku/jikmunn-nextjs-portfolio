@@ -5,7 +5,7 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import { fromTopVariants } from '@/utils/motion';
-import styles from '@/styles/index';
+import styles from '@/styles';
 
 const Navbar = () => {
   const menuItems = (

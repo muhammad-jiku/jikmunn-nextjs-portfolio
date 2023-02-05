@@ -139,7 +139,7 @@ export const zoomIn = (delay, duration) => ({
   },
 });
 
-export const footerVariants = {
+export const fromBottomVariants = {
   hidden: {
     opacity: 0,
     y: 50,
