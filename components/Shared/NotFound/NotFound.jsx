@@ -1,12 +1,19 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import NotFoundImg from '../../../assets/gifs/notfound1.gif';
+import { fromTopVariants } from '@/utils/motion';
 
 const NotFound = () => {
   return (
-    <div className="hero min-h-full">
+    <motion.div
+      variants={fromTopVariants}
+      initial="hidden"
+      whileInView="show"
+      className="hero min-h-full"
+    >
       <div className="hero-content text-center">
         <div className="max-w-md">
           <img src={NotFoundImg.src} alt="not found" />
@@ -18,7 +25,7 @@ const NotFound = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

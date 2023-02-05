@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import { motion } from 'framer-motion';
-import { navVariants } from '@/utils/motion';
+import { fromTopVariants } from '@/utils/motion';
 import styles from '@/styles/index';
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
   );
   return (
     <motion.div
-      variants={navVariants}
+      variants={fromTopVariants}
       initial="hidden"
       whileInView="show"
       className={`${styles.xPaddings} py-4 relative`}
