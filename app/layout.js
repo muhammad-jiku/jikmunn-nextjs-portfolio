@@ -1,3 +1,4 @@
+import Navbar from '@/components/Shared/Navbar/Navbar';
 import '../styles/globals.css';
 
 export default function RootLayout({ children }) {
@@ -5,6 +6,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head />
       <body className="flex flex-col min-h-screen overflow-x-hidden">
+        <Navbar />
         {children}
       </body>
     </html>
