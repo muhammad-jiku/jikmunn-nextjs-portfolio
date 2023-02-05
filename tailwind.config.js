@@ -9,7 +9,12 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // sans: ['Sofia Sans, sans-serif'],
+        custom: ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
