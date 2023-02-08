@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import ServicesCard from './ServicesCard';
 
 const Services = () => {
   return (
@@ -8,7 +11,9 @@ const Services = () => {
         <span className="hidden md:inline">||</span>Services
       </p>
       {/* services cards */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2"></div>
+      <div>
+        <ServicesCard />
+      </div>
     </div>
   );
 };
