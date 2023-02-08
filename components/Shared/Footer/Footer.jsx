@@ -10,7 +10,7 @@ import {
 import { motion } from 'framer-motion';
 import styles from '@/styles';
 import { fromBottomVariants } from '@/utils/motion';
-import GoToTop from '@/components/sub-components/ToTheTop/GoToTop';
+import GoToTop from '@/components/Shared/ToTheTop/GoToTop';
 
 const Footer = () => {
   const year = new Date()?.getFullYear();

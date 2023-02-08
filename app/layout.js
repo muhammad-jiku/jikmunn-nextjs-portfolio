@@ -2,7 +2,7 @@
 
 import Footer from '@/components/Shared/Footer/Footer';
 import Navbar from '@/components/Shared/Navbar/Navbar';
-import ScrollToTop from '@/components/sub-components/ToTheTop/ScrollToTop';
+import ScrollToTop from '@/components/Shared/ToTheTop/ScrollToTop';
 import { usePathname } from 'next/navigation';
 import { Suspense } from 'react';
 import '../styles/globals.css';

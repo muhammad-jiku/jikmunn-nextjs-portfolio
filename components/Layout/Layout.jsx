@@ -5,7 +5,7 @@ import React, { Suspense } from 'react';
 import Footer from '../Shared/Footer/Footer';
 import LoadingSpinner from '../Shared/Loading/Loading';
 import Navbar from '../Shared/Navbar/Navbar';
-import ScrollToTop from '../sub-components/ToTheTop/ScrollToTop';
+import ScrollToTop from '../Shared/ToTheTop/ScrollToTop';
 
 const MainLayout = ({ children }) => {
   const pathname = usePathname();
