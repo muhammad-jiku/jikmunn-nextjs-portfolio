@@ -1,7 +1,7 @@
 export const fromTopVariants = {
   hidden: {
     opacity: 0,
-    y: -50,
+    y: -70,
     transition: {
       type: 'spring',
       stiffness: 300,
@@ -15,6 +15,30 @@ export const fromTopVariants = {
       type: 'spring',
       stiffness: 80,
       delay: 1,
+    },
+  },
+};
+
+export const circleVariants = {
+  hidden: {
+    opacity: 0,
+    // y: -50,
+    // transition: {
+    //   type: 'spring',
+    //   stiffness: 300,
+    //   damping: 140,
+    // },
+  },
+  show: {
+    scale: [1, 2, 2, 3, 1],
+    opacity: [0.1, 0.2, 0.4, 0.08, 0.1, 1.0],
+    // y: 0,
+    borderRadius: ['20%', '20%', '50%', '80%', '20%'],
+    transition: {
+      // type: 'spring',
+      // stiffness: 80,
+      // delay: 1,
+      delay: 2.5,
     },
   },
 };

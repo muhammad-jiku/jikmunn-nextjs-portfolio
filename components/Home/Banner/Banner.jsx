@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import bgImg from '../../../assets/images/devV2.png';
 import { fromTopVariants } from '@/utils/motion';
 import styles from '@/styles';
+import BannerText from './BannerText';
+import '../../../styles/Banner.css';
 
 const Banner = () => {
   const menuItems = (
@@ -47,7 +49,7 @@ const Banner = () => {
       variants={fromTopVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} hero min-h-screen bg-cover bg-no-repeat bg-opacity-80 w-full flex flex-col relative`}
+      className={`${styles.xPaddings} hero min-h-[600px] lg:min-h-screen bg-cover bg-no-repeat bg-opacity-80 w-full flex flex-col relative snap-center`}
       // className="hero min-h-screen bg-cover bg-no-repeat w-full flex flex-col"
       style={{ backgroundImage: `url(${bgImg?.src})` }}
     >
@@ -81,7 +83,7 @@ const Banner = () => {
             </label>
             <ul
               tabIndex="0"
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 glass z-10"
+              className="menu menu-compact dropdown-content mt-2 px-2 py-1 shadow rounded-box w-52 glass z-10"
             >
               {menuItems}
             </ul>
@@ -92,41 +94,23 @@ const Banner = () => {
         </div>
       </div>
 
-      {/* hero */}
+      {/* hero banner*/}
       <div className="hero-overlay"></div>
-      <div className="hero-content text-center text-neutral-content mt-48 lg:mt-24">
+      {/* <div className="hero-content text-center mt-48 lg:mt-24"> */}
+      <div className="hero-content text-center mt-40 md:mt-44">
         <div className="max-w-md">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-              I&apos;m{' '}
-              <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
-            </h1>
-            <h1 className="text-xl md:text-3xl text-secondary">
-              MERN Stack Web Developer
-            </h1>
-            <p className="py-4 text-justify">
-              <span className="text-2xl">W</span>elcome to my portfolio that
-              I&apos;ve designed to showcase the skills and expertise that
-              I&apos;ve accumulated over the year. I&apos;ve also placed all my
-              social links, feel free to connect with me.
-            </p>
-            <button className="btn glass btn-xs sm:btn-sm md:btn-md">
-              <a
-                href={
-                  'https://drive.google.com/file/d/11G5T7o0L3YRpC5ONa7q5u0LEgdfXlL_1/view?usp=share_link'
-                }
-                target="_blank"
-                rel="noreferrer"
-              >
-                Download Resume{' '}
-                {/* <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" /> */}
-              </a>
-            </button>
-            <button className="btn active btn-xs sm:btn-sm md:btn-md ml-2">
-              <Link href={'/about'}>About Me</Link>
-            </button>
+          <div className="my-0">
+            <BannerText />
           </div>
         </div>
+      </div>
+      {/* go to down arrow*/}
+      <div>
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
       </div>
     </motion.div>
   );

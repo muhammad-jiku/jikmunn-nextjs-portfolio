@@ -10,31 +10,31 @@ const SocialIcons = () => {
         url="https://www.facebook.com/azizul.azizulhoquejiku/"
         fgColor="white"
         bgColor="transparent"
-        className="mr-2"
+        className="mr-1 md:mr-2"
       />{' '}
       <SocialIcon
         url="https://www.instagram.com/muhammadazizuljiku/"
         fgColor="white"
         bgColor="transparent"
-        className="mr-2"
+        className="mr-1 md:mr-2"
       />{' '}
       <SocialIcon
         url="https://twitter.com/muhammadjiku364/"
         fgColor="white"
         bgColor="transparent"
-        className="mr-2"
+        className="mr-1 md:mr-2"
       />{' '}
       <SocialIcon
         url="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/"
         fgColor="white"
         bgColor="transparent"
-        className="mr-2"
+        className="mr-1 md:mr-2"
       />{' '}
       <SocialIcon
         url="https://github.com/muhammad-jiku/"
         fgColor="white"
         bgColor="transparent"
-        className="mr-2"
+        className="mr-1 md:mr-2"
       />
     </>
   );

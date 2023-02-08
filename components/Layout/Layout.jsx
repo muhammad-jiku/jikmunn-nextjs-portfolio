@@ -11,7 +11,7 @@ const MainLayout = ({ children }) => {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden bg-black text-white">
+    <div className="flex flex-col min-h-screen overflow-x-hidden bg-black text-white snap-y snap-mandatory">
       <ScrollToTop pathname={pathname} />
       {pathname !== '/' ? <Navbar /> : null}
       <Suspense
