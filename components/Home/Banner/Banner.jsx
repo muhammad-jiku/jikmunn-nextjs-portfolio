@@ -49,7 +49,7 @@ const Banner = () => {
       variants={fromTopVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} hero min-h-[600px] lg:min-h-screen bg-cover bg-no-repeat bg-opacity-80 w-full flex flex-col relative snap-center`}
+      className={`${styles.xPaddings} hero min-h-[600px] lg:min-h-screen bg-cover bg-no-repeat bg-opacity-80 w-full flex flex-col relative`}
       // className="hero min-h-screen bg-cover bg-no-repeat w-full flex flex-col"
       style={{ backgroundImage: `url(${bgImg?.src})` }}
     >

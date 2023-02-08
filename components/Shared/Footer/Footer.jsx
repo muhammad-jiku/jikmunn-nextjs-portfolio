@@ -22,7 +22,7 @@ const Footer = () => {
       variants={fromBottomVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} pt-6 mt-auto relative`}
+      className={`pt-6 mt-auto relative`}
     >
       <GoToTop />
       <div className="footer footer-center p-4 glass">

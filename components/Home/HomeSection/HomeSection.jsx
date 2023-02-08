@@ -8,8 +8,12 @@ import Skillls from '../Skillls/Skillls';
 const HomeSection = () => {
   return (
     <>
-      <Banner />
-      <Services />
+      <section className="snap-start">
+        <Banner />
+      </section>
+      <section className="snap-center">
+        <Services />
+      </section>
       <Skillls />
       <RecentProjects />
       <Contact />

@@ -32,6 +32,7 @@ const BannerText = () => {
         {/* <Cursor cursorColor="#fff" /> */}
         <Cursor cursorColor="#11998D" />
       </p>
+      <SocialIcons />
       {/* <p className="text-justify">
         <span className="text-2xl">W</span>elcome to my portfolio that I&apos;ve
         designed to showcase the skills and expertise that I&apos;ve accumulated
@@ -53,7 +54,6 @@ const BannerText = () => {
       <button className="btn active btn-xs sm:btn-sm md:btn-md ml-2">
         <Link href={'/about'}>About Me</Link>
       </button> */}
-      <SocialIcons />
     </div>
   );
 };
