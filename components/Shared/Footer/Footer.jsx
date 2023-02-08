@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import {
   FaFacebookF,
@@ -12,6 +13,7 @@ import { motion } from 'framer-motion';
 import styles from '@/styles';
 import { fromBottomVariants } from '@/utils/motion';
 import GoToTop from '@/components/Shared/ToTheTop/GoToTop';
+import SocialIcons from '../SocialIcons/SocialIcons';
 
 const Footer = () => {
   const year = new Date()?.getFullYear();
@@ -26,36 +28,7 @@ const Footer = () => {
       <div className="footer footer-center p-4 glass">
         <div>
           <div>
-            <SocialIcon
-              url="https://www.facebook.com/azizul.azizulhoquejiku/"
-              fgColor="white"
-              bgColor="transparent"
-              className="mr-2"
-            />{' '}
-            <SocialIcon
-              url="https://www.instagram.com/muhammadazizuljiku/"
-              fgColor="white"
-              bgColor="transparent"
-              className="mr-2"
-            />{' '}
-            <SocialIcon
-              url="https://twitter.com/muhammadjiku364/"
-              fgColor="white"
-              bgColor="transparent"
-              className="mr-2"
-            />{' '}
-            <SocialIcon
-              url="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/"
-              fgColor="white"
-              bgColor="transparent"
-              className="mr-2"
-            />{' '}
-            <SocialIcon
-              url="https://github.com/muhammad-jiku/"
-              fgColor="white"
-              bgColor="transparent"
-              className="mr-2"
-            />
+            <SocialIcons />
             {/* <a
               href="https://www.facebook.com/azizul.azizulhoquejiku/"
               target="_blank"
