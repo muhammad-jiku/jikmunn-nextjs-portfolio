@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 // import me from '../../../assets/images/me.jpg';
-import bgImg from '../../../assets/images/dev.png';
+import bgImg from '../../../assets/images/devV2.png';
 import { fromTopVariants } from '@/utils/motion';
 import styles from '@/styles';
 
@@ -52,7 +52,7 @@ const Banner = () => {
       style={{ backgroundImage: `url(${bgImg?.src})` }}
     >
       {/* navbar */}
-      <div className="navbar bg-opacity-10 py-4 my-0 glass">
+      <div className="navbar bg-opacity-10 py-6 my-0">
         <div className="navbar-start">
           <button className="btn btn-ghost normal-case text-xs sm:text-sm md:text-xl">
             <Link href={'/'} className="">
