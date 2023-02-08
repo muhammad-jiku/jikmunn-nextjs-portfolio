@@ -7,6 +7,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from 'react-icons/fa';
+import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import styles from '@/styles';
 import { fromBottomVariants } from '@/utils/motion';
@@ -25,7 +26,37 @@ const Footer = () => {
       <div className="footer footer-center p-4 glass">
         <div>
           <div>
-            <a
+            <SocialIcon
+              url="https://www.facebook.com/azizul.azizulhoquejiku/"
+              fgColor="white"
+              bgColor="transparent"
+              className="mr-2"
+            />{' '}
+            <SocialIcon
+              url="https://www.instagram.com/muhammadazizuljiku/"
+              fgColor="white"
+              bgColor="transparent"
+              className="mr-2"
+            />{' '}
+            <SocialIcon
+              url="https://twitter.com/muhammadjiku364/"
+              fgColor="white"
+              bgColor="transparent"
+              className="mr-2"
+            />{' '}
+            <SocialIcon
+              url="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/"
+              fgColor="white"
+              bgColor="transparent"
+              className="mr-2"
+            />{' '}
+            <SocialIcon
+              url="https://github.com/muhammad-jiku/"
+              fgColor="white"
+              bgColor="transparent"
+              className="mr-2"
+            />
+            {/* <a
               href="https://www.facebook.com/azizul.azizulhoquejiku/"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +75,7 @@ const Footer = () => {
               </button>
             </a>
             <a
-              href="https://twitter.com/muhammadjiku364"
+              href="https://twitter.com/muhammadjiku364/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,14 +94,14 @@ const Footer = () => {
               </button>
             </a>
             <a
-              href="https://github.com/muhammad-jiku"
+              href="https://github.com/muhammad-jiku/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-white hover:text-black glass">
                 <FaGithub className="text-lg md:text-2xl" />
               </button>
-            </a>
+            </a> */}
           </div>
           <p>
             Copyright &copy; {year} - All right reserved by{' '}
