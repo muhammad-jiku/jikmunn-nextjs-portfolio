@@ -1,9 +1,16 @@
 'use client';
-
 import React from 'react';
+import {
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { fromBottomVariants } from '@/utils/motion';
 import styles from '@/styles';
+import { fromBottomVariants } from '@/utils/motion';
+import GoToTop from '@/components/sub-components/ToTheTop/GoToTop';
 
 const Footer = () => {
   const year = new Date()?.getFullYear();
@@ -14,57 +21,57 @@ const Footer = () => {
       whileInView="show"
       className={`${styles.xPaddings} pt-6 mt-auto relative`}
     >
-      {/* <BackToTop /> */}
+      <GoToTop />
       <div className="footer footer-center p-4 glass">
         <div>
-          {/* <div>
-             <a
-               href="https://www.facebook.com/azizul.azizulhoquejiku/"
-               target="_blank"
-               rel="noopener noreferrer"
-             >
-               <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
-                 <FaFacebookF className="text-lg md:text-2xl" />
-               </button>
-             </a>
-             <a
-               href="https://www.instagram.com/muhammadazizuljiku/"
-               target="_blank"
-               rel="noopener noreferrer"
-             >
-               <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
-                 <FaInstagram className="text-lg md:text-2xl" />
-               </button>
-             </a>
-             <a
-               href="https://twitter.com/muhammadjiku364"
-               target="_blank"
-               rel="noopener noreferrer"
-             >
-               {' '}
-               <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
-                 <FaTwitter className="text-lg md:text-2xl" />
-               </button>
-             </a>
-             <a
-               href="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/"
-               target="_blank"
-               rel="noopener noreferrer"
-             >
-               <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
-                 <FaLinkedinIn className="text-lg md:text-2xl" />
-               </button>
-             </a>
-             <a
-               href="https://github.com/muhammad-jiku"
-               target="_blank"
-               rel="noopener noreferrer"
-             >
-               <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-white hover:text-black">
-                 <FaGithub className="text-lg md:text-2xl" />
-               </button>
-             </a>
-           </div> */}
+          <div>
+            <a
+              href="https://www.facebook.com/azizul.azizulhoquejiku/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white glass">
+                <FaFacebookF className="text-lg md:text-2xl" />
+              </button>
+            </a>
+            <a
+              href="https://www.instagram.com/muhammadazizuljiku/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white glass">
+                <FaInstagram className="text-lg md:text-2xl" />
+              </button>
+            </a>
+            <a
+              href="https://twitter.com/muhammadjiku364"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white glass">
+                <FaTwitter className="text-lg md:text-2xl" />
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white glass">
+                <FaLinkedinIn className="text-lg md:text-2xl" />
+              </button>
+            </a>
+            <a
+              href="https://github.com/muhammad-jiku"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-white hover:text-black glass">
+                <FaGithub className="text-lg md:text-2xl" />
+              </button>
+            </a>
+          </div>
           <p>
             Copyright &copy; {year} - All right reserved by{' '}
             <span

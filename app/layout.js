@@ -2,6 +2,7 @@
 
 import Footer from '@/components/Shared/Footer/Footer';
 import Navbar from '@/components/Shared/Navbar/Navbar';
+import ScrollToTop from '@/components/sub-components/ToTheTop/ScrollToTop';
 import { usePathname } from 'next/navigation';
 import { Suspense } from 'react';
 import '../styles/globals.css';
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head />
       <body className="flex flex-col min-h-screen overflow-x-hidden bg-black text-white">
+        <ScrollToTop pathname={pathname} />
         {pathname !== '/' ? <Navbar /> : null}
         <Suspense
           fallback={
