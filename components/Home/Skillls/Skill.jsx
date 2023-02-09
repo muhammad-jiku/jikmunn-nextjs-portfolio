@@ -11,6 +11,7 @@ import sass from '../../../assets/images/skill_logos/sasss.png';
 import mui from '../../../assets/images/skill_logos/muii.png';
 import js from '../../../assets/images/skill_logos/JSS.png';
 import react from '../../../assets/images/skill_logos/reactjss.png';
+import redux from '../../../assets/images/skill_logos/redux.png';
 import node from '../../../assets/images/skill_logos/nodejss.png';
 import ejs from '../../../assets/images/skill_logos/ejss.png';
 import api from '../../../assets/images/skill_logos/api.png';
@@ -135,6 +136,19 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      {/* redux */}
+      <div className="group relative flex cursor-pointer">
+        <img
+          src={redux.src}
+          alt="redux"
+          className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
+        />
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+          <div className="flex items-center justify-center h-full">
+            <p className="text-xl font-bold text-black opacity-100">73%</p>
+          </div>
+        </div>
+      </div>
       {/* node */}
       <div className="group relative flex cursor-pointer">
         <img
@@ -253,7 +267,7 @@ const Skill = () => {
         </div>
       </div>
       {/* vercel */}
-      <div className="group relative flex cursor-pointer">
+      {/* <div className="group relative flex cursor-pointer">
         <img
           src={vercel.src}
           alt="vercel"
@@ -264,7 +278,7 @@ const Skill = () => {
             <p className="text-xl font-bold text-black opacity-100">92%</p>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* git */}
       <div className="group relative flex cursor-pointer">
         <img
