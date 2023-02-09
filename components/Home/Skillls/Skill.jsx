@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import html from '../../../assets/images/skill_logos/htmll.png';
 import css from '../../../assets/images/skill_logos/csss.png';
 import bootstrap from '../../../assets/images/skill_logos/bootstrapp.png';
@@ -21,10 +23,14 @@ import firebase from '../../../assets/images/skill_logos/firebasee.png';
 import vercel from '../../../assets/images/skill_logos/vercell.png';
 import git from '../../../assets/images/skill_logos/gitt.png';
 import seo from '../../../assets/images/skill_logos/seoo.png';
+import { fadeIn } from '@/utils/motion';
 
 const Skill = () => {
   return (
-    <div className="grid grid-cols-5 gap-5 my-6">
+    <motion.div
+      variants={fadeIn('up', 'spring', 3 * 0.5, 1)}
+      className="grid grid-cols-5 gap-5 my-6"
+    >
       {/* html */}
       <div className="group relative flex cursor-pointer">
         <img
@@ -285,7 +291,7 @@ const Skill = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
