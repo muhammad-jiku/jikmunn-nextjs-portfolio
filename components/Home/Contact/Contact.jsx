@@ -53,25 +53,20 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="container mx-auto px-6 my-6"
-      // style={{ fontFamily: 'Headland One' }}
+      className="container mx-auto p-6 my-6"
     >
       {/* <ToastContainer /> */}
-      {/*     <h1
-        className="text-2xl capitalize font-bold"
-        style={{ fontFamily: 'Headland One' }}
-      >
-         <span className="text-primary">Get in</span> <span>touch</span>
-        <div className="bg-gradient-to-r from-primary to-secondary h-1 w-40"></div>
-      </h1> */}
       <TypingText title="Get in touch" />
       <div className="flex flex-col items-center justify-center md:justify-around lg:flex-row">
         <div className="w-full lg:w-1/2">
-          <p className="py-6 text-xl text-justify">
-            If you have any suggestions, projects, or even want to say “hello”,
-            please fill out the form below and I will reply you shortly.
-            I&apos;ve also placed all my social account links, LinkedIn, and
-            GitHub links, feel free to connect with me.
+          <p className="py-6 text-xl text-justify text-gray-400">
+            <span className="text-teal-400">Hello there!</span> Thank You for
+            looking around my portfolio. If you have any suggestions, or want to
+            contact me, or even want to say “hello”. Please fill out the form
+            below and I will reply you shortly. I&apos;ve also placed all my
+            social account links, mail, contact no, LinkedIn, and GitHub links,
+            feel free to connect with me.{' '}
+            <span className="text-teal-400">Thank You!</span> 😊
           </p>
           {/* <div className="my-6">
             {' '}
@@ -132,7 +127,7 @@ const Contact = () => {
                     type="text"
                     name="user_name"
                     placeholder="Your Name"
-                    className="p-2 bg-transparent border-b-2 border-teal-500 w-full mb-4 focus:outline-0"
+                    className="p-2 text-gray-400 bg-transparent border-b-2 border-teal-500 w-full mb-4 focus:outline-0"
                     {...register('user_name', {
                       required: {
                         value: true,
@@ -151,7 +146,7 @@ const Contact = () => {
                     type="email"
                     name="user_email"
                     placeholder="Your Email"
-                    className="p-2 bg-transparent border-b-2 border-teal-500 w-full mb-4 focus:outline-0"
+                    className="p-2 text-gray-400 bg-transparent border-b-2 border-teal-500 w-full mb-4 focus:outline-0"
                     {...register('user_email', {
                       required: {
                         value: true,
@@ -181,7 +176,7 @@ const Contact = () => {
                   cols="30"
                   rows="10"
                   placeholder="Your Message"
-                  className="p-2 bg-transparent border-b-2 border-teal-500 focus:outline-0"
+                  className="p-2 text-gray-400 bg-transparent border-b-2 border-teal-500 focus:outline-0"
                   {...register('message', {
                     required: {
                       value: true,
