@@ -14,7 +14,9 @@ const HomeSection = () => {
       <section className="snap-center">
         <Services />
       </section>
-      <Skillls />
+      <section className="snap-center">
+        <Skillls />
+      </section>
       <RecentProjects />
       <Contact />
     </>
