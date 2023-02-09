@@ -13,26 +13,24 @@ const ServicesCard = () => {
       <div className="shadow-xl flex flex-col justify-start items-start m-1 px-16 py-4 box-border glass rounded cursor-pointer">
         <div className="py-4">
           <h2 className="text-teal-500 text-lg md:text-2xl mb-2">Web Design</h2>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} HTML/CSS</h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
-            {'>>'} Bootstrap
+            {'>>'} User Interface
+          </h3>
+          <h3 className="text-gray-400 text-sm md:text-lg">{'>>'} Layout</h3>{' '}
+          <h3 className="text-gray-400 text-sm md:text-lg">
+            {'>>'} Interaction
           </h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
-            {'>>'} Tailwind CSS
+            {'>>'} HTML Pages
           </h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
-            {'>>'} Material UI
-          </h3>{' '}
-          <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
-            {'>>'} SCSS/SASS{' '}
+            {'>>'} Responsive
           </h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
-            {'>>'} Framer Motion
+            {'>>'} Custom Redesigns
+          </h3>
+          <h3 className="text-gray-400 text-sm md:text-lg">
+            {'>>'} Designs for corporate blogs
           </h3>
         </div>
       </div>
@@ -41,49 +39,43 @@ const ServicesCard = () => {
           <h2 className="text-teal-500 text-lg md:text-2xl mb-2">
             Web Development
           </h2>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} HTML/CSS</h3>
+          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} Frontend</h3>
+          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} Backend</h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
-            {'>>'} Javascript
+            {'>>'} SPA (Single Page Application)
           </h3>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} ReactJS</h3>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} NodeJS</h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
-            {'>>'} ExpressJS
+            {'>>'} Full Stack
           </h3>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} NoSQL</h3>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} ejs</h3>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} NextJS</h3>
+          <h3 className="text-gray-400 text-sm md:text-lg">
+            {'>>'} MERN Stack
+          </h3>{' '}
+          <h3 className="text-gray-400 text-sm md:text-lg">
+            {'>>'} Web Hosting
+          </h3>
         </div>
       </div>
       <div className="shadow-xl flex flex-col justify-start items-start  m-1 px-16 py-4 box-border glass rounded cursor-pointer">
         <div className="py-4">
           <h2 className="text-teal-500 text-lg md:text-2xl mb-2">SEO</h2>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
             {'>>'} Site Audit
           </h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
             {'>>'} Keyword Research
           </h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
             {'>>'} Tracking Keywords
           </h3>
-          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} CMS</h3>
           <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} Sitemap</h3>
+          <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} CMS</h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
             {'>>'} Onpage SEO
           </h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
             {'>>'} Offpage SEO
           </h3>
           <h3 className="text-gray-400 text-sm md:text-lg">
-            {' '}
             {'>>'} Citation Building
           </h3>
         </div>
