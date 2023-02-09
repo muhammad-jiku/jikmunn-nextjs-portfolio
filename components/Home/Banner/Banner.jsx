@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 // import me from '../../../assets/images/me.jpg';
-import bgImg from '../../../assets/images/devV2.png';
+import bgImg from '../../../assets/images/person/devV2.png';
 import { fromTopVariants } from '@/utils/motion';
 import styles from '@/styles';
 import BannerText from './BannerText';

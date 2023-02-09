@@ -7,7 +7,7 @@ import { fadeIn } from '@/utils/motion';
 const ServicesCard = () => {
   return (
     <motion.div
-      variants={fadeIn('right', 'spring', 3.5 * 0.5, 0.75)}
+      variants={fadeIn('right', 'spring', 3 * 0.5, 0.75)}
       className="flex flex-col md:flex-row justify-center md:justify-evenly my-6"
     >
       <div className="shadow-xl flex flex-col justify-start items-start m-1 px-16 py-4 box-border glass rounded cursor-pointer">
