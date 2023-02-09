@@ -29,7 +29,7 @@ const Skill = () => {
   return (
     <motion.div
       variants={fadeIn('up', 'spring', 3 * 0.5, 1)}
-      className="grid grid-cols-5 gap-5 my-6"
+      className="grid grid-cols-4 md:grid-cols-5 gap-5 my-6"
     >
       {/* html */}
       <div className="group relative flex cursor-pointer">
