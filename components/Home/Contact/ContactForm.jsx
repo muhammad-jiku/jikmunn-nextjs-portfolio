@@ -2,9 +2,8 @@
 
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
-// import emailjs from '@emailjs/browser';
-// import { toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
   const {
@@ -17,23 +16,23 @@ const ContactForm = () => {
   const form = useRef();
 
   const onSubmit = () => {
-    // emailjs
-    //   .sendForm(
-    //     'service_h3mf1um', //'YOUR_SERVICE_ID',
-    //     'template_nme8c7n', //'YOUR_TEMPLATE_ID',
-    //     form.current, //data,
-    //     'CX9sx6H64TnqcK7PG' // 'YOUR_PUBLIC_KEY'
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       // toast.success('Your message sent successfully!');
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //       // toast.error('Unfortunately! your message failed to send!!');
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        `service_msnvuu9`, //'YOUR_SERVICE_ID',
+        `template_nme8c7n`, //'YOUR_TEMPLATE_ID',
+        form.current, //data,
+        `uX7f-4W2zuG0j6Jyb` // 'YOUR_PUBLIC_KEY'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success('Thank You for your message! 😊');
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error('Unfortunately! your message failed to send! 😔');
+        }
+      );
     reset();
   };
   return (

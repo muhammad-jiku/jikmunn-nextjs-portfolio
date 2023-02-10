@@ -1,8 +1,9 @@
 'use client';
 
 import React from 'react';
-// import { ToastContainer  } from 'react-toastify';
 import { motion } from 'framer-motion';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import TypingText from '@/components/Shared/CustomTexts/CustomTexts';
 import { fadeIn, fromSideVariants, staggerContainer } from '@/utils/motion';
 import ContactIcons from './ContactIcons';
@@ -18,7 +19,7 @@ const Contact = () => {
       viewport={{ once: false, amount: 0.25 }}
       className="container mx-auto p-6 my-6"
     >
-      {/* <ToastContainer /> */}
+      <ToastContainer />
       <TypingText title="Get in touch" />
       <div className="flex flex-col items-center justify-center md:justify-around lg:flex-row">
         <motion.div
