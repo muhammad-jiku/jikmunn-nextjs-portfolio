@@ -14,7 +14,7 @@ import {
 // import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
 import TypingText from '@/components/Shared/CustomTexts/CustomTexts';
-import { staggerContainer } from '@/utils/motion';
+import { fadeIn, fromSideVariants, staggerContainer } from '@/utils/motion';
 import ContactIcons from './ContactIcons';
 
 const Contact = () => {
@@ -59,7 +59,10 @@ const Contact = () => {
       {/* <ToastContainer /> */}
       <TypingText title="Get in touch" />
       <div className="flex flex-col items-center justify-center md:justify-around lg:flex-row">
-        <div className="w-full lg:w-1/2">
+        <motion.div
+          variants={fadeIn('right', 'tween', 0.2, 1)}
+          className="w-full lg:w-1/2"
+        >
           <p className="py-6 text-xl text-justify text-gray-400">
             <span className="text-teal-400">Hello there!</span> Thank You for
             looking around my portfolio. If you have any suggestions, or want to
@@ -70,8 +73,11 @@ const Contact = () => {
             <span className="text-teal-400">Thank You!</span> 😊
           </p>
           <ContactIcons />
-        </div>
-        <div className="w-full max-w-sm lg:w-1/2 shadow-2xl">
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 'tween', 0.2, 1)}
+          className="w-full max-w-sm lg:w-1/2 shadow-2xl"
+        >
           <div className="my-4">
             <form ref={form} onSubmit={handleSubmit(onSubmit)}>
               <div className="form-control flex flex-col md:flex-row mb-4">
@@ -152,7 +158,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
