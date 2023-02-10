@@ -26,7 +26,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast.success('Thank You for your message! 😊');
+          toast.success('Thank You for your valuable words! 😊');
         },
         (error) => {
           console.log(error.text);
@@ -38,7 +38,7 @@ const ContactForm = () => {
   return (
     <div className="my-4">
       <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-control flex flex-col md:flex-row mb-4">
+        <div className="form-control flex flex-col mb-4">
           <div className="mr-2">
             <input
               type="text"

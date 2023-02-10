@@ -31,7 +31,7 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={fadeIn('left', 'tween', 0.2, 1)}
-          className="w-full max-w-sm lg:w-1/2 shadow-2xl"
+          className="w-full max-w-sm lg:w-1/2 shadow-2xl my-4"
         >
           <ContactForm />
         </motion.div>
