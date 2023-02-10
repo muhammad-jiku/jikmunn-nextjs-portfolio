@@ -15,6 +15,7 @@ import {
 import { motion } from 'framer-motion';
 import TypingText from '@/components/Shared/CustomTexts/CustomTexts';
 import { staggerContainer } from '@/utils/motion';
+import ContactIcons from './ContactIcons';
 
 const Contact = () => {
   const {
@@ -68,55 +69,7 @@ const Contact = () => {
             feel free to connect with me.{' '}
             <span className="text-teal-400">Thank You!</span> 😊
           </p>
-          {/* <div className="my-6">
-            {' '}
-            <a
-              href="https://www.facebook.com/azizul.azizulhoquejiku/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
-                <FaFacebookF className="text-lg md:text-2xl" />
-              </button>
-            </a>
-            <a
-              href="https://www.instagram.com/muhammadazizuljiku/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
-                <FaInstagram className="text-lg md:text-2xl" />
-              </button>
-            </a>
-            <a
-              href="https://twitter.com/muhammadjiku364"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {' '}
-              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
-                <FaTwitter className="text-lg md:text-2xl" />
-              </button>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
-                <FaLinkedinIn className="text-lg md:text-2xl" />
-              </button>
-            </a>
-            <a
-              href="https://github.com/muhammad-jiku"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-white hover:text-black">
-                <FaGithub className="text-lg md:text-2xl" />
-              </button>
-            </a>
-          </div> */}
+          <ContactIcons />
         </div>
         <div className="w-full max-w-sm lg:w-1/2 shadow-2xl">
           <div className="my-4">
