@@ -13,7 +13,7 @@ const Skillls = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="container mx-auto p-6 my-4"
+      className="container mx-auto p-3 my-4"
     >
       <TypingText title="Skills" />
       <div className="flex flex-col items-center my-4">

@@ -17,7 +17,7 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="container mx-auto p-6 my-6"
+      className="container mx-auto p-3 my-6"
     >
       <ToastContainer />
       <TypingText title="Get in touch" />

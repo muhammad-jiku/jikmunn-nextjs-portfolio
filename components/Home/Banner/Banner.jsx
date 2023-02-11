@@ -83,7 +83,7 @@ const Banner = () => {
             </label>
             <ul
               tabIndex="0"
-              className="menu menu-compact dropdown-content mt-2 px-2 py-1 shadow rounded-box w-52 glass z-10"
+              className="menu menu-compact dropdown-content -mt-2 px-2 py-1 shadow rounded-box w-52 glass z-10"
             >
               {menuItems}
             </ul>
