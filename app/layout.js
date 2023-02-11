@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
         {pathname !== '/' ? (
           <>
             {' '}
-            <Navbar /> <Particle />
+            <Navbar />
+            <Particle />
           </>
         ) : null}
         <Suspense

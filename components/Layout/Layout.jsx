@@ -17,7 +17,8 @@ const MainLayout = ({ children }) => {
       {pathname !== '/' ? (
         <>
           {' '}
-          <Navbar /> <Particle />
+          <Navbar />
+          <Particle />
         </>
       ) : null}
       <Suspense
