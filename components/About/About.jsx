@@ -6,21 +6,16 @@ import me from '../../assets/images/person/me.jpg';
 const About = () => {
   return (
     <div className="container mx-auto my-4">
-      <div className="hero">
-        <div className="hero-content flex-col">
+      <div className="hero min-h-screen">
+        <div className="hero-content text-center flex flex-col justify-center items-center p-6">
           <img
             className="mask mask-circle shadow-2xl first-line:h-64 md:h-72"
             src={me.src}
             alt="Muhammad Azizul Hoque Jiku"
           />
 
-          <div
-          // style={{ fontFamily: 'Headland One' }}
-          >
-            <h1
-              className="text-4xl md:text-5xl font-bold capitalize text-teal-500"
-              // style={{ fontFamily: 'Headland One' }}
-            >
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold capitalize text-teal-500">
               Hello there!
             </h1>
             <p className="py-6 text-justify">
