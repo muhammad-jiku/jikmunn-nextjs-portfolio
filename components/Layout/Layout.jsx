@@ -5,6 +5,7 @@ import React, { Suspense } from 'react';
 import Footer from '../Shared/Footer/Footer';
 import LoadingSpinner from '../Shared/Loading/Loading';
 import Navbar from '../Shared/Navbar/Navbar';
+import Particle from '../Shared/Particles/Particles';
 import ScrollToTop from '../Shared/ToTheTop/ScrollToTop';
 
 const MainLayout = ({ children }) => {
@@ -13,7 +14,12 @@ const MainLayout = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden bg-black text-white snap-y snap-mandatory">
       <ScrollToTop pathname={pathname} />
-      {pathname !== '/' ? <Navbar /> : null}
+      {pathname !== '/' ? (
+        <>
+          {' '}
+          <Navbar /> <Particle />
+        </>
+      ) : null}
       <Suspense
         fallback={
           <>

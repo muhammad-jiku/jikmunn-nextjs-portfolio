@@ -2,6 +2,7 @@
 
 import Footer from '@/components/Shared/Footer/Footer';
 import Navbar from '@/components/Shared/Navbar/Navbar';
+import Particle from '@/components/Shared/Particles/Particles';
 import ScrollToTop from '@/components/Shared/ToTheTop/ScrollToTop';
 import { usePathname } from 'next/navigation';
 import { Suspense } from 'react';
@@ -16,7 +17,12 @@ export default function RootLayout({ children }) {
       <head />
       <body className="flex flex-col min-h-screen overflow-x-hidden bg-black text-white snap-y snap-mandatory">
         <ScrollToTop pathname={pathname} />
-        {pathname !== '/' ? <Navbar /> : null}
+        {pathname !== '/' ? (
+          <>
+            {' '}
+            <Navbar /> <Particle />
+          </>
+        ) : null}
         <Suspense
           fallback={
             <>

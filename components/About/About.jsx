@@ -1,46 +1,30 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import me from '../../assets/images/person/me.jpg';
 import AboutText from './AboutText';
+import { fadeIn, staggerContainer } from '@/utils/motion';
 
 const About = () => {
   return (
-    <div className="container mx-auto my-4">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="container mx-auto my-4"
+    >
       <div className="hero min-h-screen">
         <div className="hero-content flex flex-col md:flex-row p-6">
-          <img
+          <motion.img
+            variants={fadeIn('right', 'tween', 0.2, 1)}
             className="mask mask-diamond shadow-2xl h-64 md:h-72 lg:h-80"
             src={me.src}
             alt="Muhammad Azizul Hoque Jiku"
           />
 
-          <div>
-            {/* <p className="p-3 text-justify">
-              Hi, I am{' '}
-              <span className="text-teal-500">Muhammad Azizul Hoque Jiku</span>.
-              Thanks for your valuable time to check out my portfolio. I am MERN
-              Stack Web Developer and SEO enthusiast with in-depth experience. I
-              build websites, design them, and also host them that help
-              organizations address business challenges and meet their needs. I
-              am currently studying Mechanical Engineering at the Shahjalal
-              University of Science and Technology at Sylhet in Bangladesh.
-            </p>
-
-            <p className="p-3 text-justify">
-              I manage everything from website navigation and layout to a
-              company’s web hosting and security architecture. My expertise lies
-              within front-end web apps, and the main languages in my tech stack
-              are JavaScript, React, Redux, Next.js, Typescript, and of course
-              HTML/CSS.
-            </p>
-
-            <p className="p-3 text-justify">
-              Recently, I am working on writing blogs on the basics things to
-              know about web development and other technical things. I’m a
-              lifelong learner and love to explore new technology to learn, love
-              to read and run.
-            </p> */}
+          <motion.div variants={fadeIn('left', 'tween', 0.2, 1)}>
             <AboutText />
             <a
               href={
@@ -56,10 +40,10 @@ const About = () => {
                 {/* <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" /> */}
               </button>{' '}
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
