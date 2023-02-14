@@ -15,7 +15,7 @@ const RecentProjects = () => {
       className="container mx-auto p-3 my-6"
     >
       <TypingText title="Recent Projects" />
-      <h1>RecentProjects</h1>
+      <h1>Projects</h1>
     </motion.div>
   );
 };
