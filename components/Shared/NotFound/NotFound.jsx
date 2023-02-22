@@ -18,7 +18,7 @@ const NotFound = () => {
         <div className="max-w-md">
           <img src={NotFoundImg.src} alt="not found" />
           <h1 className="text-3xl font-bold py-4">Page is not found!</h1>
-          <button className="btn bg-teal-500 font-bold cursor-pointer hover:bg-teal-800">
+          <button className="btn bg-primary font-bold cursor-pointer hover:bg-neutral">
             <Link href={`/`} className="">
               Go to Home
             </Link>

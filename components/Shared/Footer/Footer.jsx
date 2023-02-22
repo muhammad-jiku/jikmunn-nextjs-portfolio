@@ -79,7 +79,7 @@ const Footer = () => {
           <p>
             Copyright &copy; {year} - All right reserved by{' '}
             <span
-              className="text-xs text-teal-500 font-extrabold sm:text-sm md:text-xl"
+              className="text-xs text-primary font-extrabold sm:text-sm md:text-xl"
               // style={{ fontFamily: 'Comfortaa' }}
             >
               {' '}

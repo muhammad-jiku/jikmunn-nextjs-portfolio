@@ -12,7 +12,7 @@ const ServicesCard = () => {
     >
       <div className="shadow-xl flex flex-col justify-start items-start m-1 px-16 py-4 box-border glass rounded cursor-pointer">
         <div className="py-4">
-          <h2 className="text-teal-500 text-lg md:text-2xl mb-2">Web Design</h2>
+          <h2 className="text-primary text-lg md:text-2xl mb-2">Web Design</h2>
           <h3 className="text-gray-400 text-sm md:text-lg">
             {'>>'} User Interface
           </h3>
@@ -36,7 +36,7 @@ const ServicesCard = () => {
       </div>
       <div className="shadow-xl flex flex-col justify-start items-start m-1 px-16 py-4 box-border glass rounded cursor-pointer">
         <div className="py-4">
-          <h2 className="text-teal-500 text-lg md:text-2xl mb-2">
+          <h2 className="text-primary text-lg md:text-2xl mb-2">
             Web Development
           </h2>
           <h3 className="text-gray-400 text-sm md:text-lg"> {'>>'} Frontend</h3>
@@ -57,7 +57,7 @@ const ServicesCard = () => {
       </div>
       <div className="shadow-xl flex flex-col justify-start items-start  m-1 px-16 py-4 box-border glass rounded cursor-pointer">
         <div className="py-4">
-          <h2 className="text-teal-500 text-lg md:text-2xl mb-2">SEO</h2>
+          <h2 className="text-primary text-lg md:text-2xl mb-2">SEO</h2>
           <h3 className="text-gray-400 text-sm md:text-lg">
             {'>>'} Site Audit
           </h3>

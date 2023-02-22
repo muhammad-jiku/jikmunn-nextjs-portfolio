@@ -39,7 +39,7 @@ const Skill = () => {
           alt="html"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">90%</p>
           </div>
@@ -52,7 +52,7 @@ const Skill = () => {
           alt="css"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">93%</p>
           </div>
@@ -65,7 +65,7 @@ const Skill = () => {
           alt="bootstrap"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">91%</p>
           </div>
@@ -78,7 +78,7 @@ const Skill = () => {
           alt="tailwind"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">95%</p>
           </div>
@@ -91,7 +91,7 @@ const Skill = () => {
           alt="sass"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">82%</p>
           </div>
@@ -104,7 +104,7 @@ const Skill = () => {
           alt="material ui"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">80%</p>
           </div>
@@ -117,7 +117,7 @@ const Skill = () => {
           alt="javascript"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">87%</p>
           </div>
@@ -130,7 +130,7 @@ const Skill = () => {
           alt="react js"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">90%</p>
           </div>
@@ -143,7 +143,7 @@ const Skill = () => {
           alt="redux"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">73%</p>
           </div>
@@ -156,7 +156,7 @@ const Skill = () => {
           alt="node js"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">83%</p>
           </div>
@@ -169,7 +169,7 @@ const Skill = () => {
           alt="embedded javascript"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">78%</p>
           </div>
@@ -182,7 +182,7 @@ const Skill = () => {
           alt="Application programming interface"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">92%</p>
           </div>
@@ -195,7 +195,7 @@ const Skill = () => {
           alt="JavaScript Object Notation"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">87%</p>
           </div>
@@ -208,7 +208,7 @@ const Skill = () => {
           alt="express js"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">93%</p>
           </div>
@@ -221,7 +221,7 @@ const Skill = () => {
           alt="mongo db"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">86%</p>
           </div>
@@ -234,7 +234,7 @@ const Skill = () => {
           alt="typescript"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">79%</p>
           </div>
@@ -247,7 +247,7 @@ const Skill = () => {
           alt="next js"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">88%</p>
           </div>
@@ -260,7 +260,7 @@ const Skill = () => {
           alt="firebase"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">83%</p>
           </div>
@@ -273,7 +273,7 @@ const Skill = () => {
           alt="vercel"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">92%</p>
           </div>
@@ -286,7 +286,7 @@ const Skill = () => {
           alt="git"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">81%</p>
           </div>
@@ -299,7 +299,7 @@ const Skill = () => {
           alt="search engine optimization"
           className="rounded-full border border-gray-400 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
-        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-teal-300 h-full w-full">
+        <div className="absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-secondary h-full w-full">
           <div className="flex items-center justify-center h-full">
             <p className="text-xl font-bold text-black opacity-100">77%</p>
           </div>

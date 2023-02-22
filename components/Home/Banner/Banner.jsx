@@ -13,32 +13,32 @@ const Banner = () => {
   const menuItems = (
     <>
       <li>
-        <Link href={'/'} className="focus:bg-teal-500">
+        <Link href={'/'} className="focus:bg-primary">
           Home
         </Link>
       </li>
       <li>
-        <Link href={'/about'} className="focus:bg-teal-500">
+        <Link href={'/about'} className="focus:bg-primary">
           About
         </Link>
       </li>
       <li>
-        <Link href={'/projects'} className="focus:bg-teal-500">
+        <Link href={'/projects'} className="focus:bg-primary">
           Projects
         </Link>
       </li>
       <li>
-        <Link href={'/blogs'} className="focus:bg-teal-500">
+        <Link href={'/blogs'} className="focus:bg-primary">
           Blogs
         </Link>
       </li>
       <li>
-        <Link href={'/sign-in'} className="focus:bg-teal-500">
+        <Link href={'/sign-in'} className="focus:bg-primary">
           Sign In
         </Link>
       </li>
       {/* <li>
-        <Link href={'/blogs'} className="focus:bg-teal-500">Blogs</Link>
+        <Link href={'/blogs'} className="focus:bg-primary">Blogs</Link>
       </li> */}
     </>
   );
@@ -58,7 +58,7 @@ const Banner = () => {
           <button className="btn btn-ghost normal-case text-xs sm:text-sm md:text-xl">
             <Link href={'/'} className="">
               {/* <FontAwesomeIcon icon={faCode} className="mr-2" size="lg" />{' '} */}
-              <span className="text-teal-500">Muhammad Azizul Hoque Jiku</span>
+              <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
             </Link>
           </button>
         </div>

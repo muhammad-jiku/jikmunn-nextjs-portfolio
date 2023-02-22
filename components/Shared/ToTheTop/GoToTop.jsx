@@ -40,7 +40,7 @@ const GoToTop = () => {
   return (
     <>
       {backToTopButton && (
-        <button className="btn btn-circle bg-teal-500 btn-md fixed bottom-36 right-4 text-white hover:bg-teal-600">
+        <button className="btn btn-circle bg-primary btn-md fixed bottom-36 right-4 text-white hover:bg-neutral">
           <FaArrowUp
             onClick={toTheTop}
             //   style={{ display: visible ? 'inline' : 'none' }}

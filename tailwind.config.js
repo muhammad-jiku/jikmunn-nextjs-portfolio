@@ -10,6 +10,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        transparent: 'transparent',
+        primary: '#14B8A6',
+        secondary: '#4DB6AC',
+        accent: '#26A69A',
+        neutral: '#00897B',
+      },
       fontFamily: {
         // sans: ['Sofia Sans, sans-serif'],
         custom: ['Poppins', 'sans-serif'],

@@ -44,7 +44,7 @@ const ContactForm = () => {
               type="text"
               name="user_name"
               placeholder="Your Name"
-              className="p-2 text-gray-400 bg-transparent border-b-2 border-teal-500 w-full mb-4 focus:outline-0"
+              className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
               {...register('user_name', {
                 required: {
                   value: true,
@@ -63,7 +63,7 @@ const ContactForm = () => {
               type="email"
               name="user_email"
               placeholder="Your Email"
-              className="p-2 text-gray-400 bg-transparent border-b-2 border-teal-500 w-full mb-4 focus:outline-0"
+              className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
               {...register('user_email', {
                 required: {
                   value: true,
@@ -93,7 +93,7 @@ const ContactForm = () => {
             cols="30"
             rows="10"
             placeholder="Your Message"
-            className="p-2 text-gray-400 bg-transparent border-b-2 border-teal-500 focus:outline-0"
+            className="p-2 text-gray-400 bg-transparent border-b-2 border-primary focus:outline-0"
             {...register('message', {
               required: {
                 value: true,
@@ -110,7 +110,7 @@ const ContactForm = () => {
         <div className="form-control mt-6">
           <input
             type="submit"
-            className="btn bg-teal-500 font-bold cursor-pointer hover:bg-teal-800 text-white uppercase"
+            className="btn bg-primary font-bold cursor-pointer hover:bg-neutral text-white uppercase"
             value="Send Message"
           />
         </div>

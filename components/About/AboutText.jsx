@@ -7,13 +7,13 @@ const AboutText = () => {
     <>
       <p className="p-3 text-justify">
         Hi, I am{' '}
-        <span className="text-teal-500">Muhammad Azizul Hoque Jiku</span>.
-        Thanks for your valuable time to check out my portfolio. I am MERN Stack
-        Web Developer and SEO enthusiast with in-depth experience. I build
-        websites, design them, and also host them that help organizations
-        address business challenges and meet their needs. I am currently
-        studying Mechanical Engineering at the Shahjalal University of Science
-        and Technology at Sylhet in Bangladesh.
+        <span className="text-primary">Muhammad Azizul Hoque Jiku</span>. Thanks
+        for your valuable time to check out my portfolio. I am MERN Stack Web
+        Developer and SEO enthusiast with in-depth experience. I build websites,
+        design them, and also host them that help organizations address business
+        challenges and meet their needs. I am currently studying Mechanical
+        Engineering at the Shahjalal University of Science and Technology at
+        Sylhet in Bangladesh.
       </p>
 
       <p className="p-3 text-justify">

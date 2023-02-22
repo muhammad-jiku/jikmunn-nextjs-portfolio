@@ -26,7 +26,7 @@ const BannerText = () => {
       <p className="text-sm md:text-md uppercase font-bold text-gray-200 pb-2 tracking-[10px] md:tracking-[8px]">
         MERN Stack Web Developer
       </p>
-      <p className="font-bold text-md md:text-xl text-teal-500">
+      <p className="font-bold text-md md:text-xl text-primary">
         {/* <p className="font-bold text-lg md:text-2xl text-white"> */}
         {text}
         {/* <Cursor cursorColor="#fff" /> */}
