@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { sendContactForm } from '@/lib/helper';
 
 const ContactForm = () => {
   const {
@@ -15,24 +16,26 @@ const ContactForm = () => {
 
   const form = useRef();
 
-  const onSubmit = () => {
-    emailjs
-      .sendForm(
-        `service_msnvuu9`, //'YOUR_SERVICE_ID',
-        `template_nme8c7n`, //'YOUR_TEMPLATE_ID',
-        form.current, //data,
-        `uX7f-4W2zuG0j6Jyb` // 'YOUR_PUBLIC_KEY'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success('Thank You so much for your valuable words! 😊');
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error('Unfortunately! your message failed to send! 😔');
-        }
-      );
+  const onSubmit = async (data) => {
+    // console.log(data);
+    await sendContactForm(data);
+    // emailjs
+    //   .sendForm(
+    //     `service_msnvuu9`, //'YOUR_SERVICE_ID',
+    //     `template_nme8c7n`, //'YOUR_TEMPLATE_ID',
+    //     form.current, //data,
+    //     `uX7f-4W2zuG0j6Jyb` // 'YOUR_PUBLIC_KEY'
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       toast.success('Thank You so much for your valuable words! 😊');
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //       toast.error('Unfortunately! your message failed to send! 😔');
+    //     }
+    //   );
     reset();
   };
   return (
@@ -42,32 +45,32 @@ const ContactForm = () => {
           <div className="mr-2">
             <input
               type="text"
-              name="user_name"
+              name="name"
               placeholder="Your Name"
               className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
-              {...register('user_name', {
+              {...register('name', {
                 required: {
                   value: true,
-                  message: 'Please insert your name',
+                  message: 'Please write down your name',
                 },
               })}
             />
             <p className="text-red-500 font-semibold">
-              {errors?.user_name?.type === 'required' && (
-                <span>{errors?.user_name?.message}</span>
+              {errors?.name?.type === 'required' && (
+                <span>{errors?.name?.message}</span>
               )}
             </p>
           </div>
           <div className="mr-2">
             <input
               type="email"
-              name="user_email"
+              name="email"
               placeholder="Your Email"
               className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
-              {...register('user_email', {
+              {...register('email', {
                 required: {
                   value: true,
-                  message: 'Please insert your email',
+                  message: 'Please write down your email',
                 },
                 pattern: {
                   value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
@@ -76,11 +79,30 @@ const ContactForm = () => {
               })}
             />
             <p className="text-red-500 font-semibold">
-              {errors?.user_email?.type === 'required' && (
-                <span>{errors?.user_email?.message}</span>
+              {errors?.email?.type === 'required' && (
+                <span>{errors?.email?.message}</span>
               )}
-              {errors?.user_email?.type === 'pattern' && (
-                <span>{errors?.user_email?.message}</span>
+              {errors?.email?.type === 'pattern' && (
+                <span>{errors?.email?.message}</span>
+              )}
+            </p>
+          </div>
+          <div className="mr-2">
+            <input
+              type="text"
+              name="topic"
+              placeholder="Your Topic"
+              className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
+              {...register('topic', {
+                required: {
+                  value: true,
+                  message: 'Please write down your topic',
+                },
+              })}
+            />
+            <p className="text-red-500 font-semibold">
+              {errors?.topic?.type === 'required' && (
+                <span>{errors?.topic?.message}</span>
               )}
             </p>
           </div>
@@ -97,7 +119,7 @@ const ContactForm = () => {
             {...register('message', {
               required: {
                 value: true,
-                message: 'Please write your message',
+                message: 'Please write down your message',
               },
             })}
           ></textarea>
