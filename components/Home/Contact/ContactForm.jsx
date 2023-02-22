@@ -26,7 +26,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast.success('Thank You for your valuable words! 😊');
+          toast.success('Thank You so much for your valuable words! 😊');
         },
         (error) => {
           console.log(error.text);
