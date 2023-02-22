@@ -23,7 +23,7 @@ const BannerText = () => {
   return (
     <div className="py-4 my-0">
       {/* <BackgroundCircle /> */}
-      <p className="text-sm md:text-md uppercase font-bold text-gray-400 pb-2 tracking-[10px] md:tracking-[8px]">
+      <p className="text-sm md:text-md uppercase font-bold text-gray-200 pb-2 tracking-[10px] md:tracking-[8px]">
         MERN Stack Web Developer
       </p>
       <p className="font-bold text-md md:text-xl text-teal-500">

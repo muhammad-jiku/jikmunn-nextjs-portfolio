@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
-import bgImg from '../../../assets/images/person/devV2.png';
+import bgImg from '../../../assets/images/display/bg4.3.png';
 import { fromTopVariants } from '@/utils/motion';
 import styles from '@/styles';
 import BannerText from './BannerText';

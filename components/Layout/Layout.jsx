@@ -16,9 +16,8 @@ const MainLayout = ({ children }) => {
       <ScrollToTop pathname={pathname} />
       {pathname !== '/' ? (
         <>
-          {' '}
           <Navbar />
-          <Particle />
+          {/* <Particle /> */}
         </>
       ) : null}
       <Suspense

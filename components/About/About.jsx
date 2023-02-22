@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import me from '../../assets/images/person/me.jpg';
+import me from '../../assets/images/display/me.jpg';
 import AboutText from './AboutText';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 

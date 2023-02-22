@@ -19,9 +19,8 @@ export default function RootLayout({ children }) {
         <ScrollToTop pathname={pathname} />
         {pathname !== '/' ? (
           <>
-            {' '}
             <Navbar />
-            <Particle />
+            {/* <Particle /> */}
           </>
         ) : null}
         <Suspense
