@@ -20,9 +20,9 @@ const HomeSection = () => {
         <Skillls />
       </section>
       <RecentProjects />
-      {/* <section className="snap-center"> */}
-      <Contact />
-      {/* </section> */}
+      <section className="snap-center">
+        <Contact />
+      </section>
     </>
   );
 };
