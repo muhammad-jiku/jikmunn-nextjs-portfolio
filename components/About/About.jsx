@@ -1,27 +1,36 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import me from '../../assets/images/display/me.jpg';
 import AboutText from './AboutText';
 import { fadeIn, staggerContainer } from '@/utils/motion';
+import { handleDisableRightClick } from '@/utils/handleRightClick';
 
 const About = () => {
+  useEffect(() => {
+    // disable right click
+    document.addEventListener('contextmenu', handleDisableRightClick);
+
+    // enable right click
+    // document.removeEventListener('contextmenu', handleDisableRightClick);
+  }, []);
+
   return (
     <motion.div
       variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
+      initial='hidden'
+      whileInView='show'
       viewport={{ once: false, amount: 0.25 }}
-      className="container mx-auto my-4"
+      className='container mx-auto my-4'
     >
-      <div className="hero min-h-screen">
-        <div className="hero-content flex flex-col md:flex-row p-6">
+      <div className='hero min-h-screen'>
+        <div className='hero-content flex flex-col md:flex-row p-6'>
           <motion.img
             variants={fadeIn('right', 'tween', 0.2, 1)}
-            className="mask mask-diamond shadow-2xl h-64 md:h-72 lg:h-80"
+            className='mask mask-diamond shadow-2xl h-64 md:h-72 lg:h-80'
             src={me.src}
-            alt="Muhammad Azizul Hoque Jiku"
+            alt='Muhammad Azizul Hoque Jiku'
           />
 
           <motion.div variants={fadeIn('left', 'tween', 0.2, 1)}>
@@ -30,11 +39,11 @@ const About = () => {
               href={
                 'https://drive.google.com/file/d/11G5T7o0L3YRpC5ONa7q5u0LEgdfXlL_1/view?usp=share_link'
               }
-              target="_blank"
-              rel="noreferrer"
-              className="ml-2"
+              target='_blank'
+              rel='noreferrer'
+              className='ml-2'
             >
-              <button className="btn glass btn-md p-2">
+              <button className='btn glass btn-md p-2'>
                 {' '}
                 Download Resume{' '}
                 {/* <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" /> */}
