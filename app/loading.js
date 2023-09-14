@@ -1,10 +1,10 @@
-import LoadingSpinner from '@/components/Shared/Loading/Loading';
+import { Loader } from '@/components';
 
 export default function Loading() {
   // You can add any UI inside Loading, including a Skeleton.
   return (
     <>
-      <LoadingSpinner />
+      <Loader />
     </>
   );
 }

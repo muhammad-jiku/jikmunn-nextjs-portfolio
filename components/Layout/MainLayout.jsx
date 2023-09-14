@@ -2,17 +2,19 @@
 
 import { usePathname } from 'next/navigation';
 import React, { Suspense } from 'react';
-import Footer from '../Shared/Footer/Footer';
-import LoadingSpinner from '../Shared/Loading/Loading';
-import Navbar from '../Shared/Navbar/Navbar';
-import Particle from '../Shared/Particles/Particles';
-import ScrollToTop from '../Shared/ToTheTop/ScrollToTop';
+import {
+  Navbar,
+  Loader,
+  Footer,
+  ScrollToTop,
+  // Particle,
+} from '..';
 
 const MainLayout = ({ children }) => {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden bg-black text-white snap-y snap-mandatory">
+    <div className='flex flex-col min-h-screen overflow-x-hidden bg-black text-white snap-y snap-mandatory'>
       <ScrollToTop pathname={pathname} />
       {pathname !== '/' ? (
         <>
@@ -23,7 +25,7 @@ const MainLayout = ({ children }) => {
       <Suspense
         fallback={
           <>
-            <LoadingSpinner />
+            <Loader />
           </>
         }
       >

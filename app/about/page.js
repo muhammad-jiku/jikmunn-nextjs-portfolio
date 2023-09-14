@@ -1,5 +1,4 @@
-import About from '@/components/About/About';
-import React from 'react';
+import { About } from '@/components';
 
 const Page = () => {
   return (

@@ -5,10 +5,10 @@ import Banner from './Banner/Banner';
 import Contact from './Contact/Contact';
 import RecentProjects from './RecentProjects/RecentProjects';
 import Services from './Services/Services';
-import Skillls from './Skillls/Skillls';
+import Skillls from './Skills/Skills';
 import { handleDisableRightClick } from '@/utils/handleRightClick';
 
-const HomeSection = () => {
+const MainPage = () => {
   useEffect(() => {
     // disable right click
     document.addEventListener('contextmenu', handleDisableRightClick);
@@ -36,4 +36,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default MainPage;
