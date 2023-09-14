@@ -10,17 +10,17 @@ import Skillls from './Skillls/Skillls';
 const HomeSection = () => {
   return (
     <>
-      <section className="snap-start">
+      <section className='snap-start'>
         <Banner />
       </section>
-      <section className="snap-center">
+      <section className='snap-center'>
         <Services />
       </section>
-      <section className="snap-center">
+      <section className='snap-center'>
         <Skillls />
       </section>
       <RecentProjects />
-      <section className="snap-center">
+      <section className='snap-center'>
         <Contact />
       </section>
     </>
