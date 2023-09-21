@@ -6,6 +6,7 @@ import me from '../../assets/images/display/me.jpg';
 import AboutText from './AboutText';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 import { handleDisableRightClick } from '@/utils/handleRightClick';
+import { FiDownload } from 'react-icons/fi';
 
 const About = () => {
   useEffect(() => {
@@ -45,8 +46,7 @@ const About = () => {
             >
               <button className='btn glass btn-md p-2'>
                 {' '}
-                Download Resume{' '}
-                {/* <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" /> */}
+                Download Resume <FiDownload className='ml-2 text-lg' />
               </button>{' '}
             </a>
           </motion.div>

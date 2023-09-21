@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import ServicesCard from './ServicesCard';
 import { staggerContainer } from '@/utils/motion';
 import { CustomTexts } from '@/components';
+import { servicesData } from '@/db';
 
 const Services = () => {
   return (
@@ -16,12 +17,11 @@ const Services = () => {
       className='container mx-auto p-3 my-4'
     >
       <CustomTexts title='Services' />
-      {/* <p className="text-lg md:text-2xl text-center md:text-left uppercase font-semibold text-gray-500 pb-2 tracking-[10px] md:tracking-[8px]">
-        <span className="hidden md:inline">||</span>Services
-      </p> */}
       {/* services cards */}
-      <div className='snap-center'>
-        <ServicesCard />
+      <div className='container mx-auto my-10 p-2 grid grid-cols-1 lg:grid-cols-3 gap-5'>
+        {servicesData.map((service, idx) => (
+          <ServicesCard key={idx} service={service} idx={idx} />
+        ))}
       </div>
     </motion.div>
   );

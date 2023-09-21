@@ -1,3 +1,21 @@
+export const servicesData = [
+  {
+    id: 1,
+    title: 'Web Design',
+    desc: 'User Interface. Layout. Interaction. HTML Pages. Responsive. Custom Redesigns. Designs for corporate blogs',
+  },
+  {
+    id: 2,
+    title: 'Web Development',
+    desc: 'Frontend. Backend. Full Stack. MERN Stack. Web Hosting. SPA (Single Page Application)',
+  },
+  {
+    id: 3,
+    title: 'SEO',
+    desc: 'Site Audit. Keyword Research. Tracking Keywords. Sitemap. CMS. Onpage SEO. Offpage SEO. Citation Building',
+  },
+];
+
 export const projectsData = [
   {
     id: 1,
