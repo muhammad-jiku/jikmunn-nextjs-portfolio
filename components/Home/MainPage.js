@@ -28,7 +28,9 @@ const MainPage = () => {
       <section className='snap-center'>
         <Skillls />
       </section>
-      <RecentProjects />
+      <section className='snap-center'>
+        <RecentProjects />
+      </section>
       <section className='snap-center'>
         <Contact />
       </section>
