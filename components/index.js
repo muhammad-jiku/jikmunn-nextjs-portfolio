@@ -15,3 +15,4 @@ export { default as MainLayout } from './Layout/MainLayout';
 // pages
 export { default as MainPage } from './Home/MainPage';
 export { default as About } from './About/About';
+export { default as Projects } from './Projects/Projects';

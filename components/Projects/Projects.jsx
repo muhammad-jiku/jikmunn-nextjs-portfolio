@@ -26,7 +26,7 @@ const About = () => {
     >
       <div className='hero min-h-screen'>
         <div className='hero-content flex flex-col p-3'>
-          <CustomTexts title='Recent Projects' />
+          <CustomTexts title='All Projects' />
           <motion.div variants={fadeIn('left', 'tween', 0.2, 1)}>
             <div className='container mx-auto my-10 p-2 grid grid-cols-1 lg:grid-cols-3 gap-5'>
               {projectsData.map((project, idx) => (
