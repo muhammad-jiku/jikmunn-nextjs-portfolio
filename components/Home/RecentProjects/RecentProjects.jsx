@@ -3,10 +3,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '@/utils/motion';
-import { CustomTexts } from '@/components';
+import { CustomTexts, CustomProjectCard } from '@/components';
 import Link from 'next/link';
 import { projectsData } from '@/db';
-import CustomProjectCard from '@/components/Shared/Custom/CustomProjectCard';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const RecentProjects = () => {
