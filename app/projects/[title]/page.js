@@ -1,5 +1,6 @@
-import { projectsData } from '@/db';
 import React, { use } from 'react';
+import { projectsData } from '@/db';
+import { ProjectDetails } from '@/components';
 
 async function getProjects(params) {
   const title = await params?.title?.split('%20')?.join(' ');
@@ -11,12 +12,11 @@ async function getProjects(params) {
 }
 
 const Page = ({ params }) => {
-  const projectDetails = use(getProjects(params));
+  const projectInfo = use(getProjects(params));
 
   return (
     <>
-      <h1>Hello</h1>
-      {console.log(projectDetails)}
+      <ProjectDetails projectInfo={projectInfo} />
     </>
   );
 };
