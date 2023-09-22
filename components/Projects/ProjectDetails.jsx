@@ -1,12 +1,21 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainer } from '@/utils/motion';
 import DetailsDemo from './Details/DetailsDemo';
 import DetailsText from './Details/DetailsText';
+import { handleDisableRightClick } from '@/utils/handleRightClick';
 
 const ProjectDetails = ({ projectInfo }) => {
+  useEffect(() => {
+    // disable right click
+    document.addEventListener('contextmenu', handleDisableRightClick);
+
+    // enable right click
+    // document.removeEventListener('contextmenu', handleDisableRightClick);
+  }, []);
+
   return (
     <motion.div
       variants={staggerContainer}

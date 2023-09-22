@@ -7,7 +7,7 @@ import { handleDisableRightClick } from '@/utils/handleRightClick';
 import { CustomTexts, CustomProjectCard } from '..';
 import { projectsData } from '@/db';
 
-const About = () => {
+const Projects = () => {
   useEffect(() => {
     // disable right click
     document.addEventListener('contextmenu', handleDisableRightClick);
@@ -40,4 +40,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projects;

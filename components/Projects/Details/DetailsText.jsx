@@ -1,11 +1,9 @@
 'use client';
 
 import React from 'react';
-import ReactPlayer from 'react-player';
-import { CustomSubTexts, CustomTexts } from '../..';
+import { CustomSubTexts } from '../..';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/motion';
-import { AiFillGithub } from 'react-icons/ai';
 import { TbBrandGithub, TbWorld } from 'react-icons/tb';
 import { TiTick } from 'react-icons/ti';
 
@@ -57,7 +55,7 @@ const DetailsText = ({ projectInfo }) => {
             {lang}
           </p>
         ))}
-      </div>{' '}
+      </div>
       <hr className='w-1/3 lg:w-1/4 mx-4 my-2 border-[1px] border-emerald-200' />
       {/* overview */}
       <div className='p-2 flex items-start'>
