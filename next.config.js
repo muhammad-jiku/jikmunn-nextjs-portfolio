@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     appDir: true, // development
+    // appDir: false, // production
   },
   images: {
     unoptimized: true,
@@ -9,6 +10,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: '**ibb.co/*',
+      },
+      {
+        protocol: 'https',
+        hostname: '**res.cloudinary.com/*',
       },
     ],
   },
