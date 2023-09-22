@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainer } from '@/utils/motion';
 import DetailsDemo from './Details/DetailsDemo';
+import DetailsText from './Details/DetailsText';
 
 const ProjectDetails = ({ projectInfo }) => {
   return (
@@ -15,6 +16,7 @@ const ProjectDetails = ({ projectInfo }) => {
       className='container mx-auto my-4 min-h-screen'
     >
       <DetailsDemo projectInfo={projectInfo} />
+      <DetailsText projectInfo={projectInfo} />
     </motion.div>
   );
 };

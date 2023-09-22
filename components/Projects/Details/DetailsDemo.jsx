@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactPlayer from 'react-player';
-import { CustomTexts } from '../..';
+import { CustomSubTexts, CustomTexts } from '../..';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/motion';
 
@@ -31,10 +31,10 @@ const DetailsDemo = ({ projectInfo }) => {
         previewTabIndex={1}
         playbackRate={1.0}
       />
-
       <div className='my-6'>
-        <CustomTexts title={`${projectInfo?.projectTitle}'s project demo`} />
+        <CustomSubTexts title={`${projectInfo?.projectTitle}'s project demo`} />
       </div>
+      <hr className='w-1/3 lg:w-1/4 my-2 border-[1px] border-emerald-200' />
     </motion.div>
   );
 };

@@ -5,6 +5,7 @@ export { default as Loader } from './Shared/Loader/Loader';
 export { default as NotFound } from './Shared/NotFound/NotFound';
 export { default as BackgroundCircle } from './Shared/BackgroundCircle/BackgroundCircle';
 export { default as CustomTexts } from './Shared/Custom/CustomTexts';
+export { default as CustomSubTexts } from './Shared/Custom/CustomSubTexts';
 export { default as CustomProjectCard } from './Shared/Custom/CustomProjectCard';
 export { default as SocialIcons } from './Shared/SocialIcons/SocialIcons';
 export { default as GoToTop } from './Shared/ToTheTop/GoToTop';
