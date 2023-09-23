@@ -14,7 +14,7 @@ const MainLayout = ({ children }) => {
   const pathname = usePathname();
 
   return (
-    <div className='flex flex-col min-h-screen overflow-x-hidden bg-black text-white snap-y snap-mandatory'>
+    <div className='flex flex-col min-h-screen overflow-hidden bg-black text-white snap-y snap-mandatory'>
       <ScrollToTop pathname={pathname} />
       {pathname !== '/' ? (
         <>

@@ -7,7 +7,7 @@ import bgImg from '../../../assets/images/display/bg4.3.png';
 import { fromTopVariants } from '@/utils/motion';
 import styles from '@/styles';
 import BannerText from './BannerText';
-import '../../../styles/banner.css';
+import style from '../../../styles/banner.module.css';
 
 const Banner = () => {
   const menuItems = (
@@ -105,10 +105,10 @@ const Banner = () => {
       </div>
       {/* go to down arrow*/}
       <div>
-        <svg className='arrows'>
-          <path className='a1' d='M0 0 L30 32 L60 0'></path>
-          <path className='a2' d='M0 20 L30 52 L60 20'></path>
-          <path className='a3' d='M0 40 L30 72 L60 40'></path>
+        <svg className={`${style?.arrows}`}>
+          <path className={`${style.a1}`} d='M0 0 L30 32 L60 0'></path>
+          <path className={`${style.a2}`} d='M0 20 L30 52 L60 20'></path>
+          <path className={`${style.a3}`} d='M0 40 L30 72 L60 40'></path>
         </svg>
       </div>
     </motion.div>

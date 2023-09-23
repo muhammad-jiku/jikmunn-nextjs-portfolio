@@ -15,8 +15,7 @@ const ContactForm = () => {
 
   const form = useRef();
 
-  const onSubmit = async (data) => {
-    // console.log(data);
+  const onSubmit = async (data) => { 
     try {
       await sendContactForm(data);
       toast.success('Thank You so much for your valuable words! 😊');

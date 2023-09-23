@@ -67,8 +67,7 @@ const generateEmailContent = (data) => {
 
 const handler = async (req, res) => {
   if (req.method === 'POST') {
-    const data = await req.body;
-    // console.log(data);
+    const data = await req.body; 
     if (!data || !data.name || !data.email || !data.topic || !data.message) {
       return res.status(500).send({
         message: 'Something went wrong!',

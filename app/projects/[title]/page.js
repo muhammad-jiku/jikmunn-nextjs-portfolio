@@ -4,6 +4,7 @@ import { NotFound, ProjectDetails } from '@/components';
 
 async function getProjects(params) {
   const title = await params?.title?.split('%20')?.join(' ');
+
   const project = projectsData?.filter(
     (item) => item?.projectTitle === title
   )[0];
