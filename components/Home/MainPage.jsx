@@ -14,7 +14,7 @@ const MainPage = () => {
     document.addEventListener('contextmenu', handleDisableRightClick);
 
     // enable right click
-    // document.removeEventListener('contextmenu', handleDisableRightClick);
+    document.removeEventListener('contextmenu', handleDisableRightClick);
   }, []);
 
   return (
