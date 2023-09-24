@@ -67,8 +67,15 @@ const generateEmailContent = (data) => {
 
 const handler = async (req, res) => {
   if (req.method === 'POST') {
-    const data = await req.body; 
-    if (!data || !data.name || !data.email || !data.topic || !data.message) {
+    const data = await req.body;
+
+    if (
+      !data ||
+      !data?.name ||
+      !data?.email ||
+      !data?.topic ||
+      !data?.message
+    ) {
       return res.status(500).send({
         message: 'Something went wrong!',
       });
@@ -78,7 +85,7 @@ const handler = async (req, res) => {
       await transporter.sendMail({
         ...mailOptions,
         ...generateEmailContent(data),
-        subject: data.topic,
+        subject: data?.topic,
       });
       return res.status(200).json({
         success: true,
@@ -90,8 +97,8 @@ const handler = async (req, res) => {
       });
     }
   } else {
-    return res.status(500).json({
-      message: 'Something Went Wrong',
+    return res.status(405).json({
+      message: 'Method Not Allowed!',
     });
   }
 };
