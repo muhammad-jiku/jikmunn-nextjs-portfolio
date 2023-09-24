@@ -25,9 +25,12 @@ const CustomProjectCard = ({ project, idx }) => {
           <h2 className='card-title text-lg lg:text-2xl'>
             {project?.projectTitle}
           </h2>
-          <button className='ml-1 btn btn-circle bg-primary hover:bg-secondary border-[1px] border-primary hover:border-secondary'>
-            <Link href={`/projects/${project?.projectTitle}`}>
-              <FiExternalLink className='text-xl' />
+          <button className='ml-1 btn btn-circle text-white bg-primary hover:bg-secondary border-[1px] border-primary hover:border-secondary'>
+            <Link
+              href={`/projects/${project?.projectTitle}`}
+              className='text-white'
+            >
+              <FiExternalLink className='text-xl text-white' />
             </Link>
           </button>
         </div>

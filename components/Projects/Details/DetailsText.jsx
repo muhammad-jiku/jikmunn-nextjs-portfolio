@@ -19,22 +19,24 @@ const DetailsText = ({ projectInfo }) => {
       <div className='flex items-center justify-between p-2'>
         <CustomSubTexts title={`${projectInfo?.projectTitle}`} />
         <div className='flex ml-2'>
-          <button className='ml-2 btn btn-circle bg-primary hover:bg-secondary border-[1px] border-primary hover:border-secondary'>
+          <button className='ml-2 btn btn-circle text-white bg-primary hover:bg-secondary border-[1px] border-primary hover:border-secondary'>
             <a
               href={`${projectInfo?.projectCodeLink}`}
               target='_blank'
               rel='noreferrer'
+              className='text-white'
             >
-              <TbBrandGithub className='text-xl' />
+              <TbBrandGithub className='text-xl text-white' />
             </a>
           </button>{' '}
-          <button className='ml-2 btn btn-circle bg-primary hover:bg-secondary border-[1px] border-primary hover:border-secondary'>
+          <button className='ml-2 btn btn-circle text-white bg-primary hover:bg-secondary border-[1px] border-primary hover:border-secondary'>
             <a
               href={`${projectInfo?.projectLink}`}
               target='_blank'
               rel='noreferrer'
+              className='text-white'
             >
-              <TbWorld className='text-xl' />
+              <TbWorld className='text-xl text-white' />
             </a>
           </button>
         </div>
