@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
-import { CustomSubTexts } from '../..';
+// external imports
 import { motion } from 'framer-motion';
-import { fadeIn } from '@/utils/motion';
-import { TbBrandGithub, TbWorld } from 'react-icons/tb';
 import { TiTick } from 'react-icons/ti';
+import { TbBrandGithub, TbWorld } from 'react-icons/tb';
+// internal imports
+import { CustomSubTexts } from '../..';
+import { fadeIn } from '@/utils/motion';
 
 const DetailsText = ({ projectInfo }) => {
   return (

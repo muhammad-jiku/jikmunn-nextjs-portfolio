@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+// internal imports
 import { projectsData } from '@/db';
 import { NotFound, ProjectDetails } from '@/components';
 

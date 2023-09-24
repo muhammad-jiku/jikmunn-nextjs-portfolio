@@ -1,5 +1,7 @@
 import React from 'react';
+// external import
 import Head from 'next/head';
+// internal import
 import { MainPage } from '@/components';
 
 const Page = () => {

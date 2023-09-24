@@ -1,7 +1,9 @@
 'use client';
 
 import React from 'react';
+// external import
 import { motion } from 'framer-motion';
+// internal imports
 import Skill from './Skill';
 import { CustomTexts } from '@/components';
 import { staggerContainer } from '@/utils/motion';

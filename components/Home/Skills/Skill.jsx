@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
+// external import
 import { motion } from 'framer-motion';
-
+// internal imports
+import { fadeIn } from '@/utils/motion';
 import html from '../../../assets/images/skill_logos/htmll.png';
 import css from '../../../assets/images/skill_logos/csss.png';
 import bootstrap from '../../../assets/images/skill_logos/bootstrapp.png';
@@ -24,7 +26,6 @@ import firebase from '../../../assets/images/skill_logos/firebasee.png';
 import vercel from '../../../assets/images/skill_logos/vercell.png';
 import git from '../../../assets/images/skill_logos/gitt.png';
 import seo from '../../../assets/images/skill_logos/seoo.png';
-import { fadeIn } from '@/utils/motion';
 
 const Skill = () => {
   return (

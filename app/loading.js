@@ -1,3 +1,4 @@
+// internal import
 import { Loader } from '@/components';
 
 export default function Loading() {

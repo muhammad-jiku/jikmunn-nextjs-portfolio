@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useEffect } from 'react';
+// external imports
 import { motion } from 'framer-motion';
-import me from '../../assets/images/display/me.jpg';
+import { FiDownload } from 'react-icons/fi';
+// internal imports
 import AboutText from './AboutText';
+import me from '../../assets/images/display/me.jpg';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 import { handleDisableRightClick } from '@/utils/handleRightClick';
-import { FiDownload } from 'react-icons/fi';
 
 const About = () => {
   useEffect(() => {

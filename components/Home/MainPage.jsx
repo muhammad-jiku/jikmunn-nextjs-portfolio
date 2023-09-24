@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useEffect } from 'react';
+// internal imports
 import Banner from './Banner/Banner';
 import Contact from './Contact/Contact';
 import RecentProjects from './RecentProjects/RecentProjects';
 import Services from './Services/Services';
-import Skillls from './Skills/Skills';
+import Skills from './Skills/Skills';
 import { handleDisableRightClick } from '@/utils/handleRightClick';
 
 const MainPage = () => {
@@ -14,7 +15,7 @@ const MainPage = () => {
     document.addEventListener('contextmenu', handleDisableRightClick);
 
     // enable right click
-    document.removeEventListener('contextmenu', handleDisableRightClick);
+    // document.removeEventListener('contextmenu', handleDisableRightClick);
   }, []);
 
   return (
@@ -26,7 +27,7 @@ const MainPage = () => {
         <Services />
       </section>
       <section className='snap-center'>
-        <Skillls />
+        <Skills />
       </section>
       <section className='snap-center'>
         <RecentProjects />

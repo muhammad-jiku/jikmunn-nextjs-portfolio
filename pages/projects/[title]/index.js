@@ -1,7 +1,9 @@
 import React from 'react';
+// external import
 import Head from 'next/head';
-import { ProjectDetails } from '@/components';
+// internal imports
 import { projectsData } from '@/db';
+import { ProjectDetails } from '@/components';
 
 const Page = ({ project }) => {
   const projectInfo = project;

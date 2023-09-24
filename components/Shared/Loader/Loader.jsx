@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+// internal import
 import loadingImg from '../../../assets/gifs/loading.gif';
 
 const Loader = () => {

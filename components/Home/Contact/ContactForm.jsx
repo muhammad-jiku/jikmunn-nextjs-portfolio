@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useRef } from 'react';
-import { useForm } from 'react-hook-form';
+// external imports
 import { toast } from 'react-toastify';
+import { useForm } from 'react-hook-form';
+// internal import
 import { sendContactForm } from '@/lib/helper';
 
 const ContactForm = () => {
@@ -15,7 +17,7 @@ const ContactForm = () => {
 
   const form = useRef();
 
-  const onSubmit = async (data) => { 
+  const onSubmit = async (data) => {
     try {
       await sendContactForm(data);
       toast.success('Thank You so much for your valuable words! 😊');
@@ -26,15 +28,15 @@ const ContactForm = () => {
     reset();
   };
   return (
-    <div className="my-4">
+    <div className='my-4'>
       <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-control flex flex-col mb-4">
-          <div className="mr-2">
+        <div className='form-control flex flex-col mb-4'>
+          <div className='mr-2'>
             <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
+              type='text'
+              name='name'
+              placeholder='Your Name'
+              className='p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0'
               {...register('name', {
                 required: {
                   value: true,
@@ -42,18 +44,18 @@ const ContactForm = () => {
                 },
               })}
             />
-            <p className="text-red-500 font-semibold">
+            <p className='text-red-500 font-semibold'>
               {errors?.name?.type === 'required' && (
                 <span>{errors?.name?.message}</span>
               )}
             </p>
           </div>
-          <div className="mr-2">
+          <div className='mr-2'>
             <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
+              type='email'
+              name='email'
+              placeholder='Your Email'
+              className='p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0'
               {...register('email', {
                 required: {
                   value: true,
@@ -65,7 +67,7 @@ const ContactForm = () => {
                 },
               })}
             />
-            <p className="text-red-500 font-semibold">
+            <p className='text-red-500 font-semibold'>
               {errors?.email?.type === 'required' && (
                 <span>{errors?.email?.message}</span>
               )}
@@ -74,12 +76,12 @@ const ContactForm = () => {
               )}
             </p>
           </div>
-          <div className="mr-2">
+          <div className='mr-2'>
             <input
-              type="text"
-              name="topic"
-              placeholder="Your Topic"
-              className="p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0"
+              type='text'
+              name='topic'
+              placeholder='Your Topic'
+              className='p-2 text-gray-400 bg-transparent border-b-2 border-primary w-full mb-4 focus:outline-0'
               {...register('topic', {
                 required: {
                   value: true,
@@ -87,7 +89,7 @@ const ContactForm = () => {
                 },
               })}
             />
-            <p className="text-red-500 font-semibold">
+            <p className='text-red-500 font-semibold'>
               {errors?.topic?.type === 'required' && (
                 <span>{errors?.topic?.message}</span>
               )}
@@ -95,14 +97,14 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="form-control mb-4">
+        <div className='form-control mb-4'>
           <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            className="p-2 text-gray-400 bg-transparent border-b-2 border-primary focus:outline-0"
+            name='message'
+            id='message'
+            cols='30'
+            rows='10'
+            placeholder='Your Message'
+            className='p-2 text-gray-400 bg-transparent border-b-2 border-primary focus:outline-0'
             {...register('message', {
               required: {
                 value: true,
@@ -110,17 +112,17 @@ const ContactForm = () => {
               },
             })}
           ></textarea>
-          <p className="text-red-500 font-semibold">
+          <p className='text-red-500 font-semibold'>
             {errors?.message?.type === 'required' && (
               <span>{errors?.message?.message}</span>
             )}
           </p>
         </div>
-        <div className="form-control mt-6">
+        <div className='form-control mt-6'>
           <input
-            type="submit"
-            className="btn bg-primary font-bold cursor-pointer hover:bg-neutral text-white uppercase"
-            value="Send Message"
+            type='submit'
+            className='btn bg-primary font-bold cursor-pointer hover:bg-neutral text-white uppercase'
+            value='Send Message'
           />
         </div>
       </form>

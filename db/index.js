@@ -1,3 +1,4 @@
+// services data exports
 export const servicesData = [
   {
     id: 1,
@@ -16,6 +17,7 @@ export const servicesData = [
   },
 ];
 
+// projects data exports
 export const projectsData = [
   {
     id: 1,

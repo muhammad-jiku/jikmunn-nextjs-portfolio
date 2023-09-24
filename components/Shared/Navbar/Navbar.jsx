@@ -1,11 +1,12 @@
 'use client';
 
-import Link from 'next/link';
 import React from 'react';
-
+// external imports
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { fromTopVariants } from '@/utils/motion';
+// internal imports
 import styles from '@/styles';
+import { fromTopVariants } from '@/utils/motion';
 
 const Navbar = () => {
   const menuItems = (

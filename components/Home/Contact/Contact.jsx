@@ -1,14 +1,16 @@
 'use client';
 
 import React from 'react';
+// external imports
 import { motion } from 'framer-motion';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-import { fadeIn, fromSideVariants, staggerContainer } from '@/utils/motion';
+// internal imports
 import ContactIcons from './ContactIcons';
 import ContactText from './ContactText';
 import ContactForm from './ContactForm';
 import { CustomTexts } from '@/components';
+import { fadeIn, staggerContainer } from '@/utils/motion';
 
 const Contact = () => {
   return (

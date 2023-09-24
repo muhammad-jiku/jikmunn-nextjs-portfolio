@@ -1,7 +1,9 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import React, { Suspense } from 'react';
+// external import
+import { usePathname } from 'next/navigation';
+// internal import
 import {
   Navbar,
   Loader,

@@ -1,12 +1,14 @@
 'use client';
 
 import React from 'react';
+// external imports
+import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+// internal imports
+import { projectsData } from '@/db';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 import { CustomTexts, CustomProjectCard } from '@/components';
-import Link from 'next/link';
-import { projectsData } from '@/db';
-import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const RecentProjects = () => {
   return (

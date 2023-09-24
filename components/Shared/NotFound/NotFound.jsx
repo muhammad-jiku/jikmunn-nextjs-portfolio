@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+// external imports
 import Link from 'next/link';
-import NotFoundImg from '../../../assets/gifs/notfound1.gif';
+import { motion } from 'framer-motion';
+// internal imports
 import { fromTopVariants } from '@/utils/motion';
+import NotFoundImg from '../../../assets/gifs/notfound1.gif';
 import { handleDisableRightClick } from '@/utils/handleRightClick';
 
 const NotFound = () => {

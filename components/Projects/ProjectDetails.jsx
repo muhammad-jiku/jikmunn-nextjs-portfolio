@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useEffect } from 'react';
+// external import
 import { motion } from 'framer-motion';
-import { staggerContainer } from '@/utils/motion';
+// internal imports
 import DetailsDemo from './Details/DetailsDemo';
 import DetailsText from './Details/DetailsText';
+import { staggerContainer } from '@/utils/motion';
 import { handleDisableRightClick } from '@/utils/handleRightClick';
 
 const ProjectDetails = ({ projectInfo }) => {

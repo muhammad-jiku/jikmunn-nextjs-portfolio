@@ -1,10 +1,11 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FiExternalLink } from 'react-icons/fi';
-import { fadeIn } from '@/utils/motion';
+// external imports
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/utils/motion';
+import { FiExternalLink } from 'react-icons/fi';
 
 const CustomProjectCard = ({ project, idx }) => {
   return (

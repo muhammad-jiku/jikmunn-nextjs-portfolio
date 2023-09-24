@@ -1,3 +1,4 @@
+// external import
 import nodemailer from 'nodemailer';
 
 const email = process.env.EMAIL_AUTHOR;

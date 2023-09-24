@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
+// external import
 import { motion } from 'framer-motion';
+// internal imports
 import ServicesCard from './ServicesCard';
-import { staggerContainer } from '@/utils/motion';
-import { CustomTexts } from '@/components';
 import { servicesData } from '@/db';
+import { CustomTexts } from '@/components';
+import { staggerContainer } from '@/utils/motion';
 
 const Services = () => {
   return (

@@ -1,13 +1,15 @@
 'use client';
 
-import Link from 'next/link';
 import React from 'react';
+// external imports
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import bgImg from '../../../assets/images/display/bg4.3.png';
-import { fromTopVariants } from '@/utils/motion';
+// internal imports
 import styles from '@/styles';
 import BannerText from './BannerText';
+import { fromTopVariants } from '@/utils/motion';
 import style from '../../../styles/banner.module.css';
+import bgImg from '../../../assets/images/display/bg4.3.png';
 
 const Banner = () => {
   const menuItems = (

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+// external import
 import { FaArrowUp } from 'react-icons/fa';
 
 const GoToTop = () => {
@@ -40,11 +41,11 @@ const GoToTop = () => {
   return (
     <>
       {backToTopButton && (
-        <button className="btn btn-circle bg-primary btn-md fixed bottom-36 right-4 text-white hover:bg-neutral">
+        <button className='btn btn-circle bg-primary btn-md fixed bottom-36 right-4 text-white hover:bg-neutral'>
           <FaArrowUp
             onClick={toTheTop}
             //   style={{ display: visible ? 'inline' : 'none' }}
-            className="text-xl"
+            className='text-xl'
           />
         </button>
       )}

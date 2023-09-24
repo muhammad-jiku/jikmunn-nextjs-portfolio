@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+// external imports
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
@@ -21,7 +22,7 @@ const Particle = () => {
   return (
     <div>
       <Particles
-        id="tsparticles"
+        id='tsparticles'
         init={particlesInit}
         loaded={particlesLoaded}
         options={{

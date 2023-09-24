@@ -1,10 +1,12 @@
 'use client';
 
-import BackgroundCircle from '@/components/Shared/BackgroundCircle/BackgroundCircle';
-import SocialIcons from '@/components/Shared/SocialIcons/SocialIcons';
-import Link from 'next/link';
 import React from 'react';
+// external imports
+import Link from 'next/link';
 import { Cursor, Typewriter, useTypewriter } from 'react-simple-typewriter';
+// internal imports
+import SocialIcons from '@/components/Shared/SocialIcons/SocialIcons';
+import BackgroundCircle from '@/components/Shared/BackgroundCircle/BackgroundCircle';
 
 const BannerText = () => {
   const [text, count] = useTypewriter({
@@ -21,16 +23,16 @@ const BannerText = () => {
     delaySpeed: 3000,
   });
   return (
-    <div className="py-4 my-0">
+    <div className='py-4 my-0'>
       {/* <BackgroundCircle /> */}
-      <p className="text-md uppercase font-bold text-gray-400 pb-2 tracking-[10px] md:tracking-[8px]">
+      <p className='text-md uppercase font-bold text-gray-400 pb-2 tracking-[10px] md:tracking-[8px]'>
         MERN Stack Web Developer
       </p>
-      <p className="font-bold text-md md:text-xl text-primary">
+      <p className='font-bold text-md md:text-xl text-primary'>
         {/* <p className="font-bold text-lg md:text-2xl text-white"> */}
         {text}
         {/* <Cursor cursorColor="#fff" /> */}
-        <Cursor cursorColor="#11998D" />
+        <Cursor cursorColor='#11998D' />
       </p>
       <SocialIcons />
       {/* <p className="text-justify">

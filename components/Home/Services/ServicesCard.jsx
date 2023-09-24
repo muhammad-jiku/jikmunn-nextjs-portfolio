@@ -1,9 +1,11 @@
 'use client';
 
 import React from 'react';
+// external imports
 import { motion } from 'framer-motion';
-import { fadeIn } from '@/utils/motion';
 import { FiChevronsRight } from 'react-icons/fi';
+// internal import
+import { fadeIn } from '@/utils/motion';
 
 const ServicesCard = ({ service }) => {
   return (

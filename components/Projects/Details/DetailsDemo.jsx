@@ -1,10 +1,12 @@
 'use client';
 
 import React from 'react';
+// external imports
 import ReactPlayer from 'react-player';
-import { CustomSubTexts, CustomTexts } from '../..';
 import { motion } from 'framer-motion';
+// internal imports
 import { fadeIn } from '@/utils/motion';
+import { CustomSubTexts } from '../..';
 
 const DetailsDemo = ({ projectInfo }) => {
   return (

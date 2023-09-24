@@ -1,11 +1,13 @@
 'use client';
 
 import React, { useEffect } from 'react';
+// external import
 import { motion } from 'framer-motion';
+// internal imports
+import { projectsData } from '@/db';
+import { CustomTexts, CustomProjectCard } from '..';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 import { handleDisableRightClick } from '@/utils/handleRightClick';
-import { CustomTexts, CustomProjectCard } from '..';
-import { projectsData } from '@/db';
 
 const Projects = () => {
   useEffect(() => {

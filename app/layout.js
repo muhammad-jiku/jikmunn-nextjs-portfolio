@@ -1,9 +1,9 @@
 'use client';
-
-import { usePathname } from 'next/navigation';
-import { Suspense } from 'react';
-import '../styles/globals.css';
+import React, { Suspense } from 'react';
+// internal imports
 import Loading from './loading';
+import '../styles/globals.css';
+import { usePathname } from 'next/navigation';
 import {
   Navbar,
   Footer,

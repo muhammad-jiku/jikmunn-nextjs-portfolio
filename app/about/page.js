@@ -1,3 +1,4 @@
+// internal import
 import { About } from '@/components';
 
 const Page = () => {

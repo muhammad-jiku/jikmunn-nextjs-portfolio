@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-
+// external import
 import Head from 'next/head';
+// internal imports
 import '../styles/globals.css';
 import { MainLayout } from '@/components';
 
